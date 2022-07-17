@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class Dice : MonoBehaviour
 {
-
     private float LifeSpan = 2.0f;
     private float StartTime;
     private bool HasRoll = false;
@@ -17,7 +16,7 @@ public class Dice : MonoBehaviour
     {
         StartTime = Time.time;
         gameObject.transform.position = new Vector3(0, 0, -3);
-    }
+}
 
     // Update is called once per frame
 

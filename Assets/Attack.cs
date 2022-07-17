@@ -8,6 +8,7 @@ public class Attack : MonoBehaviour
 	// Start is called before the first frame update
 	public Button attackBtn;
 	public Dice dice;
+	public RollUI UI;
 
 	private Dice CurrentDice;
 	void Start()
@@ -21,6 +22,7 @@ public class Attack : MonoBehaviour
 	void TaskOnClick()
 	{
 		CurrentDice = Instantiate<Dice>(dice);
+		UI.targetDice = CurrentDice;
 		attackBtn.interactable = false;
 	}
 
