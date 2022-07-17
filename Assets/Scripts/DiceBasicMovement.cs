@@ -59,8 +59,7 @@ public class DiceBasicMovement : MonoBehaviour
         if (collision.gameObject.layer == LayerMask.NameToLayer("Chips"))
         {
             GameObject.Destroy(collision.gameObject);
-            _Chips += 25;
-            ChipCounter.text = _Chips.ToString();
+            AddChips(25);
             ChipsSoundSource.PlayOneShot(ChipSound);
         }
         if (collision.gameObject.layer == LayerMask.NameToLayer("Wall"))
@@ -74,6 +73,11 @@ public class DiceBasicMovement : MonoBehaviour
             GameObject.Destroy(collision.gameObject);
             SceneManager.LoadScene("CombatScene", LoadSceneMode.Additive);
         }
+    }
+    public void AddChips(int amount)
+    {
+        _Chips += amount;
+        ChipCounter.text = _Chips.ToString();
     }
     private void FixedUpdate()
     {      
