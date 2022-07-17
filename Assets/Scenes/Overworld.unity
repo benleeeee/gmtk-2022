@@ -2191,6 +2191,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: YellowPokerChip (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 18fd985108eb945b4b72b0b59e531aca, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 18fd985108eb945b4b72b0b59e531aca, type: 3}
       propertyPath: m_RootOrder
       value: 60
@@ -2560,6 +2564,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 18fd985108eb945b4b72b0b59e531aca, type: 3}
       propertyPath: m_Name
       value: GreenPokerChip
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 18fd985108eb945b4b72b0b59e531aca, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 18fd985108eb945b4b72b0b59e531aca, type: 3}
       propertyPath: m_RootOrder
@@ -3305,6 +3313,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 18fd985108eb945b4b72b0b59e531aca, type: 3}
       propertyPath: m_Name
       value: YellowPokerChip
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 18fd985108eb945b4b72b0b59e531aca, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 18fd985108eb945b4b72b0b59e531aca, type: 3}
       propertyPath: m_RootOrder
@@ -8276,6 +8288,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GreenPokerChip
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 18fd985108eb945b4b72b0b59e531aca, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 18fd985108eb945b4b72b0b59e531aca, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -11062,6 +11078,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RedPokerChip
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 18fd985108eb945b4b72b0b59e531aca, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 18fd985108eb945b4b72b0b59e531aca, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -11713,11 +11733,29 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 869585897}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &878499954 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 18fd985108eb945b4b72b0b59e531aca, type: 3}
+  m_PrefabInstance: {fileID: 291380049}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &878499957 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 18fd985108eb945b4b72b0b59e531aca, type: 3}
   m_PrefabInstance: {fileID: 291380049}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &878499958
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 878499954}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.027023384, y: 0.026919425, z: 0.041505843}
+  m_Center: {x: 0.0035116938, y: -0.001954511, z: 0.016429506}
 --- !u!1 &890941658
 GameObject:
   m_ObjectHideFlags: 0
@@ -13722,6 +13760,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 18fd985108eb945b4b72b0b59e531aca, type: 3}
       propertyPath: m_Name
       value: RedPokerChip
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 18fd985108eb945b4b72b0b59e531aca, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 18fd985108eb945b4b72b0b59e531aca, type: 3}
       propertyPath: m_RootOrder
@@ -16052,6 +16094,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 18fd985108eb945b4b72b0b59e531aca, type: 3}
       propertyPath: m_Name
       value: YellowPokerChip (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 18fd985108eb945b4b72b0b59e531aca, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 18fd985108eb945b4b72b0b59e531aca, type: 3}
       propertyPath: m_RootOrder
@@ -20283,11 +20329,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0, y: 88.793, z: 0}
+--- !u!1 &1385964080 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 18fd985108eb945b4b72b0b59e531aca, type: 3}
+  m_PrefabInstance: {fileID: 181296546}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1385964083 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 18fd985108eb945b4b72b0b59e531aca, type: 3}
   m_PrefabInstance: {fileID: 181296546}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &1385964084
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385964080}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.027023384, y: 0.026919425, z: 0.041505843}
+  m_Center: {x: 0.0035116938, y: -0.001954511, z: 0.016429506}
 --- !u!1 &1387355409
 GameObject:
   m_ObjectHideFlags: 0
@@ -22353,6 +22417,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RedPokerChip
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 18fd985108eb945b4b72b0b59e531aca, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 18fd985108eb945b4b72b0b59e531aca, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -24278,11 +24346,29 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1747639136}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1749721921 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 18fd985108eb945b4b72b0b59e531aca, type: 3}
+  m_PrefabInstance: {fileID: 1147874228}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1749721924 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 18fd985108eb945b4b72b0b59e531aca, type: 3}
   m_PrefabInstance: {fileID: 1147874228}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &1749721925
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1749721921}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.027023384, y: 0.026919425, z: 0.041505843}
+  m_Center: {x: 0.0035116938, y: -0.001954511, z: 0.016429506}
 --- !u!1 &1750338947
 GameObject:
   m_ObjectHideFlags: 0
@@ -24879,6 +24965,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 18fd985108eb945b4b72b0b59e531aca, type: 3}
       propertyPath: m_Name
       value: GreenPokerChip
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 18fd985108eb945b4b72b0b59e531aca, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 18fd985108eb945b4b72b0b59e531aca, type: 3}
       propertyPath: m_RootOrder
