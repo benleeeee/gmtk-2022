@@ -10,8 +10,6 @@ public class Enemy : MonoBehaviour
     public Dice dice;
     private Dice CurrentDice;
 
-    public bool HasRolled = false;
-
     private int currentroundhealth;
     private int currentRound;
     // Start is called before the first frame update
@@ -24,14 +22,15 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         if(currentroundhealth != health && currentRound < player.GetCurrentRound())
         {
             health = currentroundhealth;
-            HasRolled = false;
 
             StartCoroutine(Roll());
 
             currentRound += 1;
+
 
         }
 
@@ -76,7 +75,7 @@ public class Enemy : MonoBehaviour
 
         print("dealt " + damage);
 
-        HasRolled = true;
+        player.canAttack = true;
 
     }
 }

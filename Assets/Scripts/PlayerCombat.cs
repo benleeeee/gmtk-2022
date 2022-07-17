@@ -9,17 +9,17 @@ public class PlayerCombat : MonoBehaviour
     private int currentRound;
     private Dice dice = new Dice();
 
-    public bool canAttack = false;
+    public bool canAttack = true;
     // Start is called before the first frame update
     void Start()
     {
         currentRound = 0;
+        canAttack = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        canAttack = currentRound == enemy.GetCurrentRound() && !enemy.HasRolled;
 
         if (canAttack && dice.RollValue > 0)
         {
@@ -39,6 +39,7 @@ public class PlayerCombat : MonoBehaviour
         enemy.TakeDamage(Damage);
         dice = new Dice();
         currentRound += 1;
+        canAttack = false;
     }
     public void EndCombat()
     {

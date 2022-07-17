@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1306,7 +1306,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: {fileID: 1946981954}
   health: 20
-  canAttack: 0
+  canAttack: 1
+  HasRolled: 0
 --- !u!1 &1760951296
 GameObject:
   m_ObjectHideFlags: 0
@@ -1698,6 +1699,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1721132137}
   health: 20
+  dice: {fileID: 9127081276216717523, guid: 645961a42258dd8498ebe4929d1da084, type: 3}
 --- !u!1 &1948025562
 GameObject:
   m_ObjectHideFlags: 0
