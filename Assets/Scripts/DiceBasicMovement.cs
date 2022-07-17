@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class DiceBasicMovement : MonoBehaviour
 {
+    public AudioClip ChipSound;
+    public AudioSource ChipsSoundSource;
     public int _Chips = 0;
     [SerializeField]
     private Rigidbody _rb;
@@ -56,6 +58,7 @@ public class DiceBasicMovement : MonoBehaviour
         {
             GameObject.Destroy(collision.gameObject);
             _Chips += 25;
+            ChipsSoundSource.PlayOneShot(ChipSound);
         }
         if (collision.gameObject.layer == LayerMask.NameToLayer("Wall"))
         {
