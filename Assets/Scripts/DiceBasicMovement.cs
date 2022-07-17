@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DiceBasicMovement : MonoBehaviour
 {
+    public int _Chips = 0;
     [SerializeField]
     private Rigidbody _rb;
     private void Start()
@@ -50,10 +52,20 @@ public class DiceBasicMovement : MonoBehaviour
     
     private void OnCollisionEnter(Collision collision)
     {
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Chips"))
+        {
+            GameObject.Destroy(collision.gameObject);
+            _Chips += 25;
+        }
         if (collision.gameObject.layer == LayerMask.NameToLayer("Wall"))
         {
             _movingDir = Vector3.zero;
             _rb.velocity = Vector3.zero;
+        }
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Enemy"))
+        {
+            //Transition to combat scene
+            SceneManager.LoadScene("CombatScene", LoadSceneMode.Additive);
         }
     }
     private void FixedUpdate()
