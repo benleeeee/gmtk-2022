@@ -14,10 +14,12 @@ public class CombatSceneManager : MonoBehaviour
         overworldObj = GameObject.Find("OverworldSceneObjs").transform;
         overworldObj.gameObject.SetActive(false);        
     }
+   
 
     public void ResumeOverworld()
     {
         overworldObj.gameObject.SetActive(true);
+        overworldObj.gameObject.GetComponentInChildren<DiceBasicMovement>().AddChips(25);
         SceneManager.UnloadSceneAsync("CombatScene");
     }
 
