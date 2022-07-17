@@ -50,9 +50,10 @@ public class DiceBasicMovement : MonoBehaviour
     
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.layer == 7)
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Wall"))
         {
-
+            _movingDir = Vector3.zero;
+            _rb.velocity = Vector3.zero;
         }
     }
     private void FixedUpdate()
