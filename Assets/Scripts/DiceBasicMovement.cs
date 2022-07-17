@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class DiceBasicMovement : MonoBehaviour
 {
     public AudioClip ChipSound;
     public AudioSource ChipsSoundSource;
+    public TextMeshProUGUI ChipCounter;
     public int _Chips = 0;
     [SerializeField]
     private Rigidbody _rb;
@@ -58,6 +60,7 @@ public class DiceBasicMovement : MonoBehaviour
         {
             GameObject.Destroy(collision.gameObject);
             _Chips += 25;
+            ChipCounter.text = _Chips.ToString();
             ChipsSoundSource.PlayOneShot(ChipSound);
         }
         if (collision.gameObject.layer == LayerMask.NameToLayer("Wall"))
