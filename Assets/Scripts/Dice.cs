@@ -40,7 +40,6 @@ public class Dice : MonoBehaviour
     public void GenerateNumber()
     {
         RollValue = (int)Random.Range(1, 7);
-        print(RollValue);
         HasRoll = true;
     }
 }
