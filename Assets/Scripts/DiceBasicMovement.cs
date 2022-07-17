@@ -25,7 +25,7 @@ public class DiceBasicMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        CheckForInput();
+        CheckForInput();        
     }
     void CheckForInput()
     {
@@ -47,9 +47,16 @@ public class DiceBasicMovement : MonoBehaviour
             _movingDir += new Vector3(1, 0, 0);
         }        
     }
+    
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.layer == 7)
+        {
 
+        }
+    }
     private void FixedUpdate()
-    {        
-        transform.position = transform.position + (_movingDir.normalized * _moveSpeed * Time.deltaTime);
+    {      
+        _rb.velocity = _movingDir.normalized * _moveSpeed * Time.deltaTime;
     }
 }
