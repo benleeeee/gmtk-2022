@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class Enemy : MonoBehaviour
 {
@@ -9,7 +11,8 @@ public class Enemy : MonoBehaviour
     public int health = 20;
     public Dice dice;
     private Dice CurrentDice;
-
+    public Slider slider;
+    public RollUI ui;
     private int currentroundhealth;
     private int currentRound;
     // Start is called before the first frame update
@@ -22,7 +25,9 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
+        slider.value = health;
+
         if(currentroundhealth != health && currentRound < player.GetCurrentRound())
         {
             health = currentroundhealth;
@@ -56,7 +61,14 @@ public class Enemy : MonoBehaviour
 
     public void EndCombat()
     {
-        print("Won fight");
+        // Play Victory Music
+
+
+
+
+
+        FindObjectOfType<CombatSceneManager>().ResumeOverworld();
+
     }
 
 
@@ -74,6 +86,8 @@ public class Enemy : MonoBehaviour
         CurrentDice = new Dice();
 
         print("dealt " + damage);
+        ui.targetDice.RollValue = damage;
+        ui.LastAttacker = false;
 
         player.canAttack = true;
 

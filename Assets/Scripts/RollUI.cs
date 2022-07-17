@@ -14,6 +14,9 @@ public class RollUI : MonoBehaviour
 
     private TextMeshProUGUI text;
 
+    // if true then player else enemy
+    public bool LastAttacker = true;
+
 
     // Start is called before the first frame update
     void Start()
@@ -31,7 +34,17 @@ public class RollUI : MonoBehaviour
             {
                 diceImage.sprite = sprites[targetDice.RollValue - 1];
             }
-            text.text = "You rolled a " + targetDice.RollValue + "!";
+            if (LastAttacker)
+            {
+                text.text = "You rolled a " + targetDice.RollValue + "!";
+
+            }
+            else
+            {
+                text.text = "Enemy rolled a " + targetDice.RollValue + "!";
+
+            }
+
         }
     }
 }

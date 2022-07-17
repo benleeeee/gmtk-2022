@@ -1,14 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerCombat : MonoBehaviour
 {
     public Enemy enemy;
-    public int health = 20;
+    public int health = 30;
     private int currentRound;
     private Dice dice = new Dice();
 
+    public Slider slider;
     public bool canAttack = true;
     // Start is called before the first frame update
     void Start()
@@ -20,6 +22,7 @@ public class PlayerCombat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        slider.value = health;
 
         if (canAttack && dice.RollValue > 0)
         {
@@ -44,7 +47,7 @@ public class PlayerCombat : MonoBehaviour
     public void EndCombat()
     {
         // Scene transition
-        
+        FindObjectOfType<CombatSceneManager>().ResumeOverworld();
     }
 
     public int GetCurrentRound()

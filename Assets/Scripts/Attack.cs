@@ -24,6 +24,7 @@ public class Attack : MonoBehaviour
 	{
 		CurrentDice = Instantiate<Dice>(dice);
 		UI.targetDice = CurrentDice;
+		UI.LastAttacker = true;
 		player.SetDice(CurrentDice);
 
 		attackBtn.interactable = false;
