@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CombatSceneManager : MonoBehaviour
 {
@@ -17,6 +18,12 @@ public class CombatSceneManager : MonoBehaviour
     public void ResumeOverworld()
     {
         overworldObj.gameObject.SetActive(true);
+        SceneManager.UnloadSceneAsync("CombatScene");
     }
-   
+
+    [ContextMenu("Test")]
+    void Test()
+    {
+        ResumeOverworld();
+    }
 }

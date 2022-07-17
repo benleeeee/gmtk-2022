@@ -65,6 +65,7 @@ public class DiceBasicMovement : MonoBehaviour
         if (collision.gameObject.layer == LayerMask.NameToLayer("Enemy"))
         {
             //Transition to combat scene
+            GameObject.Destroy(collision.gameObject);
             SceneManager.LoadScene("CombatScene", LoadSceneMode.Additive);
         }
     }
