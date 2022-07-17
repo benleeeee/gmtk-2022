@@ -19,7 +19,7 @@ public class PlayerCombat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        canAttack = (currentRound == enemy.GetCurrentRound());
+        canAttack = currentRound == enemy.GetCurrentRound() && !enemy.HasRolled;
 
         if (canAttack && dice.RollValue > 0)
         {
@@ -54,5 +54,10 @@ public class PlayerCombat : MonoBehaviour
     public void SetDice(Dice tobject)
     {
         dice = tobject;
+    }
+
+    public void TakeDamage(int damage)
+    {
+        health -= damage;
     }
 }
