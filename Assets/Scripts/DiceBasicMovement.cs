@@ -6,6 +6,10 @@ using TMPro;
 
 public class DiceBasicMovement : MonoBehaviour
 {
+    public AudioClip WalkSound;
+    public AudioSource WalkSoundSource;
+    public float walkSoundCooldown = 0.1f;
+    public float walkSoundCDTimer;
     public AudioClip ChipSound;
     public AudioSource ChipsSoundSource;
     public TextMeshProUGUI ChipCounter;
@@ -82,5 +86,15 @@ public class DiceBasicMovement : MonoBehaviour
     private void FixedUpdate()
     {      
         _rb.velocity = _movingDir.normalized * _moveSpeed * Time.deltaTime;
+
+        walkSoundCDTimer -= Time.deltaTime;
+        if (walkSoundCDTimer <= 0)
+        {
+            if (_rb.velocity.sqrMagnitude > 0)
+            {
+                WalkSoundSource.PlayOneShot(WalkSound);
+                walkSoundCDTimer = walkSoundCooldown;
+            }
+        }
     }
 }
