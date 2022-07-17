@@ -7,7 +7,11 @@ public class Enemy : MonoBehaviour
     public PlayerCombat player;
     
     public int health = 20;
-   
+    public Dice dice;
+    private Dice CurrentDice;
+
+    public bool HasRolled = false;
+
     private int currentroundhealth;
     private int currentRound;
     // Start is called before the first frame update
@@ -22,8 +26,13 @@ public class Enemy : MonoBehaviour
     {
         if(currentroundhealth != health && currentRound < player.GetCurrentRound())
         {
-            NewTurn();
-            
+            health = currentroundhealth;
+            HasRolled = false;
+
+            StartCoroutine(Roll());
+
+            currentRound += 1;
+
         }
 
         if (currentroundhealth <= 0)
@@ -45,25 +54,29 @@ public class Enemy : MonoBehaviour
     {
         return currentRound;
     }
-    private void Roll()
-    {
-
-        print("deal");
-    }
-
-
-    public void NewTurn()
-    {
-        health = currentroundhealth;
-        new WaitForSeconds(2);
-
-        Roll();
-        currentRound += 1;
-    }
 
     public void EndCombat()
     {
         print("Won fight");
     }
 
+
+    IEnumerator Roll()
+    {
+        int damage = Random.Range(1, 7);
+
+        yield return new WaitForSecondsRealtime(2);
+
+        CurrentDice = Instantiate<Dice>(dice);
+
+        yield return new WaitForSecondsRealtime(2);
+
+        player.TakeDamage(damage);
+        CurrentDice = new Dice();
+
+        print("dealt " + damage);
+
+        HasRolled = true;
+
+    }
 }
