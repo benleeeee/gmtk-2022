@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1686.6667
     height: 852
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Project
   m_RootView: {fileID: 7}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -39,9 +39,9 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 610
+    x: 728
     y: 0
-    width: 678
+    width: 560
     height: 475.33334
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 140
+  controlID: 21
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -249,7 +249,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 141
+  controlID: 22
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -275,7 +275,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 142
+  controlID: 23
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -293,7 +293,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 318.66666
     y: 0
-    width: 291.33334
+    width: 409.33334
     height: 475.33334
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
@@ -322,8 +322,8 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 7.3333335
-    y: 555.3334
+    x: -32000
+    y: -31306
     width: 1287
     height: 305.66666
   m_ViewDataDictionary: {fileID: 0}
@@ -343,22 +343,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\harri\Desktop\GMTK2022
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 18.333344}
-    m_SelectedIDs: 72620000
-    m_LastClickedID: 25202
-    m_ExpandedIDs: 000000004e62000066620000a8be000000ca9a3bffffff7f
+    m_SelectedIDs: fa6d0000
+    m_LastClickedID: 28154
+    m_ExpandedIDs: 00000000d26d000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -386,7 +386,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000004e620000
+    m_ExpandedIDs: 00000000d26d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -514,23 +514,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: d6220000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: f85afdff765dfdff7077feff7677feff268bfeff468bfeff588bfeff7cd9feff12edfeffc067ffff4086ffffa4edffff20fbffffc263000098ae0000e4da0000f2da0000fcda000008db00002edb000040db000050db000058db0000
+      m_ExpandedIDs: 1ea2ffff74a2ffff26a4ffff8ea4ffffa0a4ffffa8aaffffeeaaffff50abffff12acffff58acffff34aeffff48b9ffffa2b9ffffc0b9ffff24baffff36baffff90bfffffe4bfffff9ac1ffff04c2ffff2cc2ffff78c7ffff54e2ffff98e9ffffeee9ffffa0ebffff04ecffff1eecffff28fbffff1289000042890000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: BG
-        m_OriginalName: BG
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 65586
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 5}
       m_SearchString: 
@@ -560,9 +560,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 326
-    y: 80
-    width: 289.33334
+    x: -31522
+    y: -32019
+    width: 407.33334
     height: 454.33334
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -787,9 +787,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 768.2298, y: 293.1017, z: 92.99603}
+    m_Target: {x: 1039.812, y: 527.3754, z: 8.011944}
     speed: 2
-    m_Value: {x: 768.2298, y: 293.1017, z: 92.99603}
+    m_Value: {x: 1039.812, y: 527.3754, z: 8.011944}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -840,9 +840,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 556.8257
+    m_Target: 304.6377
     speed: 2
-    m_Value: 556.8257
+    m_Value: 304.6377
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -860,7 +860,7 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 1
     m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: -0.059500933, y: 0.07180651, z: 0.0042929943, w: 0.99564236}
+  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -887,9 +887,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 617.3334
+    x: 735.3334
     y: 80
-    width: 676
+    width: 558
     height: 454.33334
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -937,10 +937,10 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 676
+      width: 558
       height: 433.33334
-    m_Scale: {x: 0.528125, y: 0.528125}
-    m_Translation: {x: 338, y: 216.66667}
+    m_Scale: {x: 0.4359375, y: 0.4359375}
+    m_Translation: {x: 279, y: 216.66667}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -948,12 +948,12 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
       x: -640
-      y: -410.25644
+      y: -497.01315
       width: 1280
-      height: 820.5129
+      height: 994.0263
     m_MinimalGUI: 1
-  m_defaultScale: 0.528125
-  m_LastWindowPixelSize: {x: 1014, y: 681.5}
+  m_defaultScale: 0.4359375
+  m_LastWindowPixelSize: {x: 837, y: 681.5}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
